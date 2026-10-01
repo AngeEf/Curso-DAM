@@ -11,11 +11,12 @@ cuatro lugares  a tu elección, no los indicados en la imagen ejemplo.
 LugaresE.java escribe. */
 	
 	public static FileOutputStream fos = null;
-	public static String enviar ="Lugar\tPaís\n"
-							    +"Acueducto\tEspaña\n"
-							    +"Coliseo\tItalia\n"
-							    +"Guiza\tEgipto\n"
-							    +"Chichén Itzá\tMéxico";
+	public static String enviar = """
+            Lugar\tPais
+            Acueducto\tEspana
+            Coliseo\tItalia
+            Guiza\tEgipto
+            Chichen Itza\tMexico""";
 		
 	public static void setFos()
 	{	try 
@@ -27,8 +28,8 @@ LugaresE.java escribe. */
 	}
 	
 	public static void enviar()
-	{	short nChar=0; 
-	  	char car='a'; 
+	{	short nChar;
+	  	char car;
 	  	try 
 	  	{ 	for (nChar=0;nChar<enviar.length();nChar++) 
 	  		{ 	car = enviar.charAt(nChar); 
@@ -48,7 +49,7 @@ LugaresE.java escribe. */
 		}
 	}
 	
-	public static void main(String[] args) 
+	static void main(String[] args)
 	{	//Escribir
 		setFos();
 		enviar();
