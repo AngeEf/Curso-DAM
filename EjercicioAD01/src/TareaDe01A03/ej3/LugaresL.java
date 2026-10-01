@@ -61,7 +61,7 @@ LugaresL.java lee las filas 1, 3 y 5 del excel. */
 		}
 	}
 	
-	public static void main(String[] args) 
+    static void main(String[] args)
 	{	//Leer, no conocemos el número de caracteres de apellidos.txt
 		setFis();
 		recibir();
