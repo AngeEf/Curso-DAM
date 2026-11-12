@@ -31,6 +31,7 @@ public class Alumno implements Angelina {
 
     @Override
     public void show() {
+
         System.out.println("Alumno [Ciclo: " + ciclo + ", Curso: " + curso + "]");
     }
 
