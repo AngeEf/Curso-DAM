@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Apellido1 { // Замените на вашу фамилию: 'Tuapellido1'
+public class Apellido1 {
 
     // Параметры конфигурации для подключения к базе данных MySQL
     private static final String URL = "jdbc:mysql://localhost:3307/productos?serverTimezone=UTC";
@@ -28,7 +28,7 @@ public class Apellido1 { // Замените на вашу фамилию: 'Tuap
             conexion = DriverManager.getConnection(URL, USUARIO, PASSWORD);
 
             if (conexion != null) {
-                System.out.println("-> Conexión establecida correctamente con la base de datos 'productos'.");
+                System.out.println("-> Conexión establecida correctamente con la base de datos 'productos'");
             }
         } catch (ClassNotFoundException e) {
             // Обработка ошибки: драйвер не найден в classpath
@@ -68,7 +68,6 @@ public class Apellido1 { // Замените на вашу фамилию: 'Tuap
 
             // Перебор массива и подстановка значений в SQL-запрос
             for (Object[] fila : datos) {
-                // Примечание: в исходном коде были ошибки индексов (fila и fila[9]).
                 // Они исправлены на fila[0] и fila[1].
                 ps.setString(1, (String) fila[0]); // Устанавливаем марку (первый параметр)
                 ps.setDouble(2, (Double) fila[1]); // Устанавливаем длину (второй параметр)
